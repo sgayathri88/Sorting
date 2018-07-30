@@ -1,6 +1,12 @@
 describe('Bubble Sort', function(){
+
+  beforeAll(function () {
+  spyOn(global, 'sort').and.callThrough(); // replace existing `tootsiepop['lick']` method
+  });
+
   it('handles an empty array', function(){
     expect( bubbleSort([]) ).toEqual( [] );
+    expect(this.sort.calls.count()).toEqual(3);
   });
 
   it('handles a single-element array', function(){
