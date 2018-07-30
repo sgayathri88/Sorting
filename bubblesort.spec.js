@@ -1,4 +1,4 @@
-describe('Bubble Sort', function(){
+xdescribe('Bubble Sort', function(){
 
   beforeAll(function () {
   spyOn(global, 'sort').and.callThrough(); // replace existing `tootsiepop['lick']` method
